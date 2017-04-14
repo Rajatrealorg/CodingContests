@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_1"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:paddingBottom="5dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:id="@+id/code_comp_name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_launcher"
+                    android:id="@+id/code_site_logo"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorPrimary"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/app_name"
+                    android:id="@+id/code_start_time"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorPrimary"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/app_name"
+                    android:id="@+id/code_end_time"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorPrimary"
+                    android:textStyle="italic"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/app_name"
+                    android:id="@+id/code_duration"/>
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="#00000000"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_games_white"
+            android:id="@+id/code_go_to_site"
+            android:contentDescription="Go To Website" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="#00000000"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_share_white"
+            android:id="@+id/code_link_share"
+            android:contentDescription="Share Contest Link" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
